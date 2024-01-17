@@ -1,0 +1,54 @@
+let num = 1001
+console.log(num);
+console.log(typeof num);
+console.log(typeof String(num));
+console.log(String(num));
+console.log(num.length);
+num = String(1001);
+console.log(num);
+console.log(num.length);
+let numTwo = 123.45;
+console.log(numTwo)
+console.log(String(numTwo));
+
+if (String(numTwo).includes('.')){
+    console.log(String(numTwo).length-1);
+    } else {
+    console.log(String(num).length);
+    }
+
+
+
+let dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT "
+console.log(dna);
+
+console.log(dna.trim());
+console.log(dna.toUpperCase());
+
+console.log(dna.trim().toUpperCase());
+
+dna = dna.trim().toUpperCase();
+console.log(dna);
+
+dna = dna.replace('GCT','AGG');
+console.log(dna);
+
+console.log(dna.indexOf('CAT'));
+if (dna.indexOf('CAT')){
+    console.log("CAT FOUND");
+} else {
+    console.log("NOT FOUND");
+}
+
+console.log(dna.slice(16,19));
+
+console.log(`"The DNA strand is ${dna.length} characters long."`);
+
+let program = "JavaScript";
+console.log(program);
+console.log(`${program.slice(0,1)}${program.slice(4,5)}`);
+
+console.log(`The abbreviation of '${program}' is '${program.initials}'.`)
+
+console.log(program.slice(0,1).program.replace('J,R')+program.slice(1,3)+program.slice(4,5).program.replace('S,T')+program.slice(5,9));
+
