@@ -50,5 +50,25 @@ console.log(`${program.slice(0,1)}${program.slice(4,5)}`);
 
 console.log(`The abbreviation of '${program}' is '${program.initials}'.`)
 
-console.log(program.slice(0,1).program.replace('J,R')+program.slice(1,3)+program.slice(4,5).program.replace('S,T')+program.slice(5,9));
+let javaScriptFrameworks = ["React", "Angular", "Ember"];
+console.log(javaScriptFrameworks);
 
+// Set the value of index 2 to be "Vue"
+javaScriptFrameworks[2] = "Vue";
+
+// Notice the value at index 2 is now "Vue"
+console.log(javaScriptFrameworks);
+
+let arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+arr.splice(2,3);    //Start at index 2 and remove 3 total entries.
+console.log(arr);
+
+arr.splice(1,1);    //Start at index 1 and remove 1 entry.
+console.log(arr);
+
+let lol = ['a', 'b', 'c'];
+
+console.log(lol.push('d', 'f', 42));
+
+console.log(lol);
