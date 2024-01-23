@@ -35,58 +35,58 @@ candidateName = input.question("What is your name? ");
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-candidateAnswer = input.question(questions[0]);
+candidateAnswers[0] = input.question(questions[0]);
 
-while (candidateAnswer[0] !== correctAnswers[0]){
-  if (candidateAnswer[0] === correctAnswers[0]){
+while (candidateAnswers[0] !== correctAnswers[0]){
+  if (candidateAnswers[0] === correctAnswers[0]){
     break;
   }
   console.log("Incorrect. Please try again. ");
-  candidateAnswer = input.question(questions[0]);
+  candidateAnswers[0] = input.question(questions[0]);
 
 }
 
-candidateAnswers = input.question(questions[1]);
+candidateAnswers[1] = input.question(questions[1]);
 
-while (candidateAnswer[1] !== correctAnswers[1]){
-  if (candidateAnswer[1] === correctAnswers[1]){
+while (candidateAnswers[1] !== correctAnswers[1]){
+  if (candidateAnswers[1] === correctAnswers[1]){
     break;
   }
   console.log("Incorrect. Please try again. ");
-  candidateAnswer = input.question(questions[1]);
+  candidateAnswers[1] = input.question(questions[1]);
 
 }
 
-candidateAnswer = input.question(questions[2]);
+candidateAnswers[2] = input.question(questions[2]);
 
-while (candidateAnswer[2] !== correctAnswers[2]){
-  if (candidateAnswer[2] === correctAnswers[2]){
+while (candidateAnswers[2] !== correctAnswers[2]){
+  if (candidateAnswers[2] === correctAnswers[2]){
     break;
   }
   console.log("Incorrect. Please try again. ");
-  candidateAnswer = input.question(questions[2]);
+  candidateAnswers[2] = input.question(questions[2]);
 
 }
 
-candidateAnswer = input.question(questions[3]);
+candidateAnswers[3] = input.question(questions[3]);
 
-while (candidateAnswer[3] !== correctAnswers[3]){
-  if (candidateAnswer[3] === correctAnswers[3]){
+while (candidateAnswers[3] !== correctAnswers[3]){
+  if (candidateAnswers[3] === correctAnswers[3]){
     break;
   }
   console.log("Incorrect. Please try again. ");
-  candidateAnswer = input.question(questions[3]);
+  candidateAnswers[3] = input.question(questions[3]);
 
 }
 
-candidateAnswer = input.question(questions[4]);
+candidateAnswers[4] = input.question(questions[4]);
 
-while (candidateAnswer[4] !== correctAnswers[4]){
-  if (candidateAnswer[4] === correctAnswers[4]){
+while (candidateAnswers[4] !== correctAnswers[4]){
+  if (candidateAnswers[4] === correctAnswers[4]){
     break;
   }
   console.log("Incorrect. Please try again. ");
-  candidateAnswer = input.question(questions[4]);
+  candidateAnswers[4] = input.question(questions[4]);
 
 }
 
