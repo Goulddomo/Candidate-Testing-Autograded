@@ -28,7 +28,7 @@ let correctAnswers = [
   "3",
 ];
 let candidateAnswers = ['','','','',''];
-// let numCorrect = [];
+let numCorrect = [ ];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -56,73 +56,75 @@ function askQuestion() {
 
   candidateAnswers[0] = input.question(questions[0]);
 
-while (candidateAnswers[0] !== correctAnswers[0]){
+// while (candidateAnswers[0] !== correctAnswers[0]){
   if (candidateAnswers[0] === correctAnswers[0]){
-    // numCorrect.push(candidateAnswers[0]);
-    // console.log(numCorrect);
-    break;
-  }
-  console.log("Incorrect. Please try again. ");
-  candidateAnswers[0] = input.question(questions[0]);
+    numCorrect.push(candidateAnswers[0]);
+    console.log(numCorrect);
+    // break;
+  } else {
+  console.log("Incorrect.");
+  // break;
+  // candidateAnswers[0] = input.question(questions[0]);
 
 }
 
 candidateAnswers[1] = input.question(questions[1]);
 
-while (candidateAnswers[1] !== correctAnswers[1]){
+// while (candidateAnswers[1] !== correctAnswers[1]){
   if (candidateAnswers[1] === correctAnswers[1]){
-        // numCorrect.push(candidateAnswers[1]);
-            // console.log("Correct.");
-    break;
-  }
-  console.log("Incorrect. Please try again. ");
-  candidateAnswers[1] = input.question(questions[1]);
+    console.log("Correct.");
+    numCorrect.push(candidateAnswers[1]);
+    // break;
+  } else {
+  console.log("Incorrect.");
+  // break;
+  // candidateAnswers[1] = input.question(questions[1]);
 
 }
 
 candidateAnswers[2] = input.question(questions[2]);
 
-while (candidateAnswers[2] !== correctAnswers[2]){
+// while (candidateAnswers[2] !== correctAnswers[2]){
   if (candidateAnswers[2] === correctAnswers[2]){
-        // numCorrect.push(candidateAnswers[2]);
-        // console.log("Correct.");
-    break;
-  }
-  console.log("Incorrect. Please try again. ");
-  candidateAnswers[2] = input.question(questions[2]);
-
+    numCorrect.push(candidateAnswers[2]);
+    console.log("Correct.");
+    // break;
+  } else {
+  console.log("Incorrect.");
+  // candidateAnswers[2] = input.question(questions[2]);
+  // break;
 }
 
 candidateAnswers[3] = input.question(questions[3]);
 
-while (candidateAnswers[3] !== correctAnswers[3]){
+// while (candidateAnswers[3] !== correctAnswers[3]){
   if (candidateAnswers[3] === correctAnswers[3]){
-        // numCorrect.push(candidateAnswers[3]);
-        // console.log("Correct.");
-    break;
-  }
-  console.log("Incorrect. Please try again. ");
-  candidateAnswers[3] = input.question(questions[3]);
-
+    numCorrect.push(candidateAnswers[3]);
+    console.log("Correct.");
+    // break;
+  } else {
+  console.log("Incorrect.");
+  // candidateAnswers[3] = input.question(questions[3]);
+  // break;
 }
 
 candidateAnswers[4] = input.question(questions[4]);
 
-while (candidateAnswers[4] !== correctAnswers[4]){
+// while (candidateAnswers[4] !== correctAnswers[4]){
   if (candidateAnswers[4] === correctAnswers[4]){
-    // numCorrect.push(candidateAnswers[3]);
-        // console.log("Correct.");
-    break;
-  }
-  console.log("Incorrect. Please try again. ");
-  candidateAnswers[4] = input.question(questions[4]);
-
+    numCorrect.push(candidateAnswers[4]);
+    console.log("Correct.");
+    // break;
+  } else {
+  console.log("Incorrect.");
+  // candidateAnswers[4] = input.question(questions[4]);
+  // break;
 }
-
+console.log(numCorrect);
 }
 
 function gradeQuiz(candidateAnswers) {
-
+}
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
 //   if (candidateAnswer === correctAnswer){
