@@ -11,6 +11,7 @@ let candidateAnswer = " ";
 
 
 //TODO: Variables for Part 2
+
 let questions = [
   'Who was the first American woman in space? ',
   'True or false: 5 kilometer == 5000 meters? ',
@@ -18,6 +19,7 @@ let questions = [
   "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ",
   'What is the minimum crew size for the ISS? '
 ];
+
 let correctAnswers = [
   'Sally Ride',
   'true',
@@ -26,7 +28,7 @@ let correctAnswers = [
   "3",
 ];
 let candidateAnswers = ['','','','',''];
-
+// let numCorrect = [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -35,10 +37,29 @@ candidateName = input.question("What is your name? ");
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-candidateAnswers[0] = input.question(questions[0]);
+
+  // For Loop
+
+// for (let i = 0; i < questions.length; i++) {
+  
+
+// while (candidateAnswers[i] !== correctAnswers[i]);{
+//   if (candidateAnswers[i] === correctAnswers[i]){
+//     numCorrect.push(candidateAnswers[i];
+//     break;
+//   }
+//   console.log("Incorrect. Please try again. ");
+//   candidateAnswers[i] = input.question(questions[i]);
+// }
+
+
+
+  candidateAnswers[0] = input.question(questions[0]);
 
 while (candidateAnswers[0] !== correctAnswers[0]){
   if (candidateAnswers[0] === correctAnswers[0]){
+    // numCorrect.push(candidateAnswers[0]);
+    // console.log(numCorrect);
     break;
   }
   console.log("Incorrect. Please try again. ");
@@ -50,6 +71,8 @@ candidateAnswers[1] = input.question(questions[1]);
 
 while (candidateAnswers[1] !== correctAnswers[1]){
   if (candidateAnswers[1] === correctAnswers[1]){
+        // numCorrect.push(candidateAnswers[1]);
+            // console.log("Correct.");
     break;
   }
   console.log("Incorrect. Please try again. ");
@@ -61,6 +84,8 @@ candidateAnswers[2] = input.question(questions[2]);
 
 while (candidateAnswers[2] !== correctAnswers[2]){
   if (candidateAnswers[2] === correctAnswers[2]){
+        // numCorrect.push(candidateAnswers[2]);
+        // console.log("Correct.");
     break;
   }
   console.log("Incorrect. Please try again. ");
@@ -72,6 +97,8 @@ candidateAnswers[3] = input.question(questions[3]);
 
 while (candidateAnswers[3] !== correctAnswers[3]){
   if (candidateAnswers[3] === correctAnswers[3]){
+        // numCorrect.push(candidateAnswers[3]);
+        // console.log("Correct.");
     break;
   }
   console.log("Incorrect. Please try again. ");
@@ -83,6 +110,8 @@ candidateAnswers[4] = input.question(questions[4]);
 
 while (candidateAnswers[4] !== correctAnswers[4]){
   if (candidateAnswers[4] === correctAnswers[4]){
+    // numCorrect.push(candidateAnswers[3]);
+        // console.log("Correct.");
     break;
   }
   console.log("Incorrect. Please try again. ");
@@ -139,9 +168,16 @@ function gradeQuiz(candidateAnswers) {
 
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
 
+// numCorrect;
+// questions.length
 
-  return grade;
-}
+
+// return grade = (numCorrect.length / question.length) * 100;
+// }
+// console.log(`Your grade is ${grade}.`);
+
+
+
 
 function runProgram() {
   askForName();
