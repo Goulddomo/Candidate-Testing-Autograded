@@ -168,15 +168,15 @@ function gradeQuiz(candidateAnswers) {
 //   console.log("Incorrect. Please try again. ");
 // }
 
-  let grade;  //TODO 3.2 use this variable to calculate the candidates score.
+  let grade = " ";  //TODO 3.2 use this variable to calculate the candidates score.
 
 // numCorrect;
 // questions.length
 
 
-// return grade = (numCorrect.length / question.length) * 100;
-// }
-// console.log(`Your grade is ${grade}.`);
+// return grade = (question.length / numCorrect.length) * 100;
+
+// console.log(`Your grade is ${grade}%.`);
 
 
 
