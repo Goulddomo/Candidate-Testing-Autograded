@@ -59,7 +59,7 @@ function askQuestion() {
 // while (candidateAnswers[0] !== correctAnswers[0]){
   if (candidateAnswers[0] === correctAnswers[0]){
     numCorrect.push(candidateAnswers[0]);
-    console.log(numCorrect);
+    console.log("Correct.");
     // break;
   } else {
   console.log("Incorrect.");
@@ -124,7 +124,7 @@ console.log(numCorrect);
 }
 
 function gradeQuiz(candidateAnswers) {
-}
+
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
 //   if (candidateAnswer === correctAnswer){
@@ -168,17 +168,17 @@ function gradeQuiz(candidateAnswers) {
 //   console.log("Incorrect. Please try again. ");
 // }
 
-  let grade = " ";  //TODO 3.2 use this variable to calculate the candidates score.
+  let grade = (questions.length / numCorrect.length) * 100;  //TODO 3.2 use this variable to calculate the candidates score.
 
 // numCorrect;
 // questions.length
 
 
-// return grade = (question.length / numCorrect.length) * 100;
+return grade
 
-// console.log(`Your grade is ${grade}%.`);
+}
 
-
+console.log(gradeQuiz(questions));
 
 
 function runProgram() {
