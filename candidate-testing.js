@@ -57,7 +57,7 @@ function askQuestion() {
   candidateAnswers[0] = input.question(questions[0]);
 
 // while (candidateAnswers[0] !== correctAnswers[0]){
-  if (candidateAnswers[0] === correctAnswers[0]){
+  if (candidateAnswers[0].toUpperCase === correctAnswers[0].toUpperCase){
     numCorrect.push(candidateAnswers[0]);
     console.log("Correct.");
     // break;
@@ -71,7 +71,7 @@ function askQuestion() {
 candidateAnswers[1] = input.question(questions[1]);
 
 // while (candidateAnswers[1] !== correctAnswers[1]){
-  if (candidateAnswers[1] === correctAnswers[1]){
+  if (candidateAnswers[1].toUpperCase === correctAnswers[1].toUpperCase){
     console.log("Correct.");
     numCorrect.push(candidateAnswers[1]);
     // break;
@@ -98,7 +98,7 @@ candidateAnswers[2] = input.question(questions[2]);
 candidateAnswers[3] = input.question(questions[3]);
 
 // while (candidateAnswers[3] !== correctAnswers[3]){
-  if (candidateAnswers[3] === correctAnswers[3]){
+  if (candidateAnswers[3].toUpperCase === correctAnswers[3].toUpperCase){
     numCorrect.push(candidateAnswers[3]);
     console.log("Correct.");
     // break;
@@ -172,9 +172,9 @@ function gradeQuiz(candidateAnswers) {
 
 // numCorrect;
 // questions.length
-
-
-return grade
+console.log(grade);
+console.log(`Your grade is ${grade}%.`);
+return grade;
 
 }
 
