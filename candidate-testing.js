@@ -58,7 +58,6 @@ function askQuestion() {
 
 // while (candidateAnswers[0] !== correctAnswers[0]){
   if (candidateAnswers[0].toUpperCase() === correctAnswers[0].toUpperCase()){
-    numCorrect.push(candidateAnswers[0]);
     console.log("Correct.");
     // break;
   } else {
@@ -73,7 +72,6 @@ candidateAnswers[1] = input.question(questions[1]);
 // while (candidateAnswers[1] !== correctAnswers[1]){
   if (candidateAnswers[1].toUpperCase() === correctAnswers[1].toUpperCase()){
     console.log("Correct.");
-    numCorrect.push(candidateAnswers[1]);
     // break;
   } else {
   console.log("Incorrect.");
@@ -86,7 +84,6 @@ candidateAnswers[2] = input.question(questions[2]);
 
 // while (candidateAnswers[2] !== correctAnswers[2]){
   if (candidateAnswers[2] === correctAnswers[2]){
-    numCorrect.push(candidateAnswers[2]);
     console.log("Correct.");
     // break;
   } else {
@@ -99,7 +96,6 @@ candidateAnswers[3] = input.question(questions[3]);
 
 // while (candidateAnswers[3] !== correctAnswers[3]){
   if (candidateAnswers[3].toUpperCase() === correctAnswers[3].toUpperCase()){
-    numCorrect.push(candidateAnswers[3]);
     console.log("Correct.");
     // break;
   } else {
@@ -112,7 +108,6 @@ candidateAnswers[4] = input.question(questions[4]);
 
 // while (candidateAnswers[4] !== correctAnswers[4]){
   if (candidateAnswers[4] === correctAnswers[4]){
-    numCorrect.push(candidateAnswers[4]);
     console.log("Correct.");
     // break;
   } else {
@@ -173,10 +168,9 @@ let numCorrect = []
 // while (candidateAnswers[0] !== correctAnswers[0]){
   if (candidateAnswers[0].toUpperCase() === correctAnswers[0].toUpperCase()){
     numCorrect.push(candidateAnswers[0]);
-    console.log("Correct.");
     // break;
   } else {
-  console.log("Incorrect.");
+  console.log("1. The correct answer is Sally Ride.");
   // break;
   // candidateAnswers[0] = input.question(questions[0]);
 
@@ -184,11 +178,10 @@ let numCorrect = []
 
 // while (candidateAnswers[1] !== correctAnswers[1]){
   if (candidateAnswers[1].toUpperCase() === correctAnswers[1].toUpperCase()){
-    console.log("Correct.");
     numCorrect.push(candidateAnswers[1]);
     // break;
   } else {
-  console.log("Incorrect.");
+  console.log("2. The correct answer is true.");
   // break;
   // candidateAnswers[1] = input.question(questions[1]);
 
@@ -197,10 +190,9 @@ let numCorrect = []
 // while (candidateAnswers[2] !== correctAnswers[2]){
   if (candidateAnswers[2] === correctAnswers[2]){
     numCorrect.push(candidateAnswers[2]);
-    console.log("Correct.");
     // break;
   } else {
-  console.log("Incorrect.");
+  console.log("3. The correct answer is 40");
   // candidateAnswers[2] = input.question(questions[2]);
   // break;
 }
@@ -208,10 +200,9 @@ let numCorrect = []
 // while (candidateAnswers[3] !== correctAnswers[3]){
   if (candidateAnswers[3].toUpperCase() === correctAnswers[3].toUpperCase()){
     numCorrect.push(candidateAnswers[3]);
-    console.log("Correct.");
     // break;
   } else {
-  console.log("Incorrect.");
+  console.log("4. The correct answer is Trajectory.");
   // candidateAnswers[3] = input.question(questions[3]);
   // break;
 }
@@ -219,10 +210,9 @@ let numCorrect = []
 // while (candidateAnswers[4] !== correctAnswers[4]){
   if (candidateAnswers[4] === correctAnswers[4]){
     numCorrect.push(candidateAnswers[4]);
-    console.log("Correct.");
     // break;
   } else {
-  console.log("Incorrect.");
+  console.log("5. The correct answer is 3.");
   // candidateAnswers[4] = input.question(questions[4]);
   // break;
   }
