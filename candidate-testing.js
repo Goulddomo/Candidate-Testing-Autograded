@@ -66,6 +66,7 @@ for (let i = 0; i < questions.length; i++){
   // candidateAnswers[0] = input.question(questions[0]);
 
 }
+
 }
 // candidateAnswers[1] = input.question(questions[1]);
 
@@ -116,7 +117,7 @@ for (let i = 0; i < questions.length; i++){
 //   // break;
 // }
 // // console.log(numCorrect);
-// }
+}
 
 function gradeQuiz(candidateAnswers) {
 
