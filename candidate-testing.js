@@ -53,11 +53,11 @@ function askQuestion() {
 // }
 
 
-
-  candidateAnswers[0] = input.question(questions[0]);
+for (let i = 0; i < questions.length; i++){
+  candidateAnswers[i] = input.question(questions[i]);
 
 // while (candidateAnswers[0] !== correctAnswers[0]){
-  if (candidateAnswers[0].toUpperCase() === correctAnswers[0].toUpperCase()){
+  if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()){
     console.log("Correct.");
     // break;
   } else {
@@ -66,57 +66,57 @@ function askQuestion() {
   // candidateAnswers[0] = input.question(questions[0]);
 
 }
-
-candidateAnswers[1] = input.question(questions[1]);
-
-// while (candidateAnswers[1] !== correctAnswers[1]){
-  if (candidateAnswers[1].toUpperCase() === correctAnswers[1].toUpperCase()){
-    console.log("Correct.");
-    // break;
-  } else {
-  console.log("Incorrect.");
-  // break;
-  // candidateAnswers[1] = input.question(questions[1]);
-
 }
+// candidateAnswers[1] = input.question(questions[1]);
 
-candidateAnswers[2] = input.question(questions[2]);
+// // while (candidateAnswers[1] !== correctAnswers[1]){
+//   if (candidateAnswers[1].toUpperCase() === correctAnswers[1].toUpperCase()){
+//     console.log("Correct.");
+//     // break;
+//   } else {
+//   console.log("Incorrect.");
+//   // break;
+//   // candidateAnswers[1] = input.question(questions[1]);
 
-// while (candidateAnswers[2] !== correctAnswers[2]){
-  if (candidateAnswers[2] === correctAnswers[2]){
-    console.log("Correct.");
-    // break;
-  } else {
-  console.log("Incorrect.");
-  // candidateAnswers[2] = input.question(questions[2]);
-  // break;
-}
+// }
 
-candidateAnswers[3] = input.question(questions[3]);
+// candidateAnswers[2] = input.question(questions[2]);
 
-// while (candidateAnswers[3] !== correctAnswers[3]){
-  if (candidateAnswers[3].toUpperCase() === correctAnswers[3].toUpperCase()){
-    console.log("Correct.");
-    // break;
-  } else {
-  console.log("Incorrect.");
-  // candidateAnswers[3] = input.question(questions[3]);
-  // break;
-}
+// // while (candidateAnswers[2] !== correctAnswers[2]){
+//   if (candidateAnswers[2] === correctAnswers[2]){
+//     console.log("Correct.");
+//     // break;
+//   } else {
+//   console.log("Incorrect.");
+//   // candidateAnswers[2] = input.question(questions[2]);
+//   // break;
+// }
 
-candidateAnswers[4] = input.question(questions[4]);
+// candidateAnswers[3] = input.question(questions[3]);
 
-// while (candidateAnswers[4] !== correctAnswers[4]){
-  if (candidateAnswers[4] === correctAnswers[4]){
-    console.log("Correct.");
-    // break;
-  } else {
-  console.log("Incorrect.");
-  // candidateAnswers[4] = input.question(questions[4]);
-  // break;
-}
-// console.log(numCorrect);
-}
+// // while (candidateAnswers[3] !== correctAnswers[3]){
+//   if (candidateAnswers[3].toUpperCase() === correctAnswers[3].toUpperCase()){
+//     console.log("Correct.");
+//     // break;
+//   } else {
+//   console.log("Incorrect.");
+//   // candidateAnswers[3] = input.question(questions[3]);
+//   // break;
+// }
+
+// candidateAnswers[4] = input.question(questions[4]);
+
+// // while (candidateAnswers[4] !== correctAnswers[4]){
+//   if (candidateAnswers[4] === correctAnswers[4]){
+//     console.log("Correct.");
+//     // break;
+//   } else {
+//   console.log("Incorrect.");
+//   // candidateAnswers[4] = input.question(questions[4]);
+//   // break;
+// }
+// // console.log(numCorrect);
+// }
 
 function gradeQuiz(candidateAnswers) {
 
